@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+   
+  />
+  <link rel="stylesheet" href="/Css/estilo.css" />
+    <title>Adivinate esta</title>
+</head>
+<body>
+  <header>
+    <h1>Adivinanza gamer xd!!!</h1>
+  </header>
+
+  <nav id="Menu" class="navbar navbar-expand-sm ">
+   <ul class="navbar-nav">
+    <li><button type="button"  class="btn btn-primary" onclick="location.href ='index.html'">Home </button></li>
+      <li><button type="button"  class="btn btn-primary" onclick="location.href ='#footer'">Contacto</button></li>
+    
+    </ul>
+  </nav>
+  <div id="textoJuego">
+  <h1>¿Lo reconoces?</h1>
+	<h2>Intenta adivinar y responder con el nombre del juego  al que pertenece la imagen que aparece en el menu y en el pie de pagina. Sólo tienes 4 intentos.</h2>
+	<br><br><p>¿Cuál es tu nombre? <input type="text" id="nombre"></p>
+	<button onclick="jugar_ahora()">Jugar</button>
+	<p id="rdo"></p>
+
+  </div>
+  <div id="resultadojuego">
+	<script>
+		function jugar_ahora() {
+
+			
+			
+			var cant_intentos = 4;
+			var acerto = false;
+		
+			var nombredejuego;
+			var solucion = "Assassin's Creed Valhalla";
+
+			var nombre=document.getElementById("nombre").value;
+
+			if(nombre=="")
+			{
+				alert("Por favor, ingrese su  nombre para JUGAR");
+			}
+			else
+			{
+				while(cant_intentos>0 && acerto!=true)
+				{
+					cant_intentos--;
+					nombredejuego=  prompt("Ingrese el nombre del juego");
+					if (nombredejuego==solucion)
+					{
+						alert("EUREKA!!");
+						acerto=true;
+					}
+          else if (nombredejuego.length != solucion.length && cant_intentos > 2)
+          {alert(" Te quedan " + cant_intentos + " Intentos") }
+					else if (nombredejuego.length<solucion.length && cant_intentos <= 2 && cant_intentos != 0)
+					{
+						alert("PISTA: el nombre  tiene mas caracteres y tres palabras." +  " Te quedan " + cant_intentos + " Intentos" + " ANIMO!!!");
+					}
+					else if (nombredejuego.length>solucion.length && cant_intentos >= 2 && cant_intentos != 0)
+					{
+						alert("PISTA: el nombre  tiene menos caracteres y tres palabras." + "  Te quedan  " + cant_intentos + " Intentos"+ " Lo Lograras!!!");
+					}
+					else if (nombredejuego != solucion && cant_intentos == 0){
+
+            alert("Game Over, sigue participando")
+          }
+
+				}
+                
+					document.getElementById("rdo").innerHTML=   " <br> <br> El juego que te recomendamos hoy es: <strong>" + solucion + "</strong> " 
+
+
+				
+                    
+			
+                 
+               
+			}
+		
+		} 
+
+	</script>
+</div>
+
+
+</body>
+
+
+<div class="container-fluid">
+      
+    <footer id="footer">
+      <div class="row">
+        <div class="col-md-4">
+        <table id="contactofooter">  <tr><th><img class="iconosfooter"src="/Imagenes/ubicacionicono.ico" alt="">Nono-Traslasierra (Cba)-Argentina</th>
+          <th></th>
+        
+        </tr>
+        <tr><th><img class="iconosfooter"src="/Imagenes/correo.ico" alt="">ignacioromero365@gmail.com</th>
+        
+        </tr>
+        <tr> <th><img class="iconosfooter"src="/Imagenes/telefono.ico" alt="">31(61)123-33-15</th> </tr>
+        <tr> <th><b>Developer</b>-<b>Ignacio Romero.</b></th> </tr>
+        
+        
+        </table>
+      </div>
+
+<div class="col-md-4">
+
+        <table id="tablaaccesorapido">
+         <tr><th>
+
+          <strong>ACCESO RAPIDO</strong>
+         </th></tr>
+         <tr><th><a class="footer-link"  href="#Menu">Menu</a></th></tr>
+       
+
+        </table>
+      </div>
+        
+      <div class="col-md-4">
+      <table id="tabladatafiscalfooter">
+     
+      <tr></tr><th colspan="3"><img id="imagendatafiscal" class="iconosfooter"src="/Imagenes/datafiscal.ico" alt=""><strong>Suscribite y enterate de sorteos, promos, ofertas y novedades!</strong></th></tr>
+    
+    <tr><th colspan="3" id="imagendatafiscal"><strong>Redes:</strong></th></tr>
+    <tr><td colspan="3"><img id="imagendatafiscal" class="iconosfooter"src="/Imagenes/Redes.png" alt=""></td></tr>
+        </table>
+      </div>
+      </div>
+    </footer>
+     <!-- cIERRE DE divclass CONTEINER-FLUID FOOTER-->
+  </div>
+</html>
