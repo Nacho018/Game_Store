@@ -23,7 +23,7 @@ header h1 {
 /*----------NAV-------------*/
 .navbar {
   background-color: rgb(87, 4, 87);
-  background-image: url(../Imagenes/assassins.jpg);
+  background-image: url(./../Imagenes/assassins.jpg);
 
   text-align: center;
   vertical-align: center;
@@ -158,7 +158,7 @@ aside table th {
 /*----------FOOTER-------------*/
 
 footer {
-  background-image: url(../Imagenes/assassins1.jpg);
+  background-image: url(./../Imagenes/assassins1.jpg);
 
   background-color: rgb(87, 4, 87);
   height: 40%;
