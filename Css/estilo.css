@@ -21,16 +21,18 @@ header h1 {
   font-size: 65px;
 }
 /*----------NAV-------------*/
-.navbar {
+.navbar { 
   background-color: rgb(87, 4, 87);
   background-image: url(./../Imagenes/assassins.jpg);
-  background-position:top;
+  background-image:device-width;
+  background-position:top ;
+  background-attachment: scroll;
   text-align: center;
   vertical-align: center;
   padding: 70px;
 
   padding-left: 5%;
-  padding-right: 20%;
+  padding-right: -30%;
   margin-bottom: 5%;
 
   margin-top: 0%;
@@ -76,8 +78,8 @@ nav button {
 /*-------SECTION----------------*/
 section {
   color: rgb(21, 21, 88);
-  padding-right: 5%;
-  margin-left: 5%;
+  padding-right: 1%;
+  margin-left: 7%;
   margin-top: 1px;
   display: grid;
   position: relative;
@@ -87,7 +89,7 @@ section h6{text-decoration-line: underline;}
 
 section p {
   background-color: aquamarine;
-  margin-right: 30%;
+  margin-right: 0%;
   margin-left: 25%;
 
   width: 140px;
@@ -117,16 +119,16 @@ section table a:hover {
 
 aside {
   float: right;
-  position: sticky;
+  position: static;
   height: 500px;
   display: block;
   text-decoration: none;
   
-  margin-top: -10px;
+  margin-top: 5px;
 
-  margin-left: 160%;
+ 
   width: 15%;
-  padding: 15%;
+  padding: 3%;
   padding-bottom: 0px;
 }
 aside table {
@@ -219,13 +221,14 @@ footer table th img {
 }
 
 .form-group {
-  padding-left: 20%;
+  padding-left: 12%;
 
   margin-top: 5%;
+  margin-left: 12%;
 }
 
 .row button {
-  margin-left: 20%;
+  margin-left: 22%;
 }
 .row h2 {
   margin-left: 20%;
@@ -244,6 +247,7 @@ footer table th img {
   margin-right: -30%;
   padding: 6%;
   width: 120%;
+  margin-top: 10%;
 }
 
 .footercortos #tablaaccesorapido {
@@ -261,12 +265,16 @@ footer table th img {
 .imagendatafiscal {
     margin-left: 20%;
   }
+  .navbar{background-image: ;}
+  .imagen1producto{height: ;}
 
 /*---------IDs---------------------------------*/
 
 #imagenindex {
-  width: 704px;
-  height: 742px;
+  width: 604px;
+  height: 642px;
+  text-align: left;
+  display: block;
 }
 #checkremeberme {
   margin-left: 6%;
@@ -352,12 +360,15 @@ footer table th img {
 #tablanuevosjuegos {
   border: 2px rgb(87, 4, 87) solid;
   background-color: aquamarine;
-  margin-left: 5%;
-  margin-top: -39%;
-  padding: 40%;
+  margin-left: 3%;
+  margin-top: 20%;
+  padding: 3px;
+ 
+  width: 100%;
+  height: 85%;
 }
 #tablanuevosjuegos caption {
-  color: rgb(21, 21, 88);
+  color: rgb(21, 21, 88);S
 }
 #tablanuevosjuegos th {
   padding-right: 0;
@@ -366,13 +377,13 @@ footer table th img {
 #tablanuevosjuegos table tr {
   margin-top: 4%;
 }
-#tablanuevosjuegos table th {
+/*#tablanuevosjuegos table th {
   border: none;
   color: rgb(21, 21, 88);
 
   padding: 2px;
   text-align: left;
-}
+}*/
 
 #titulotabla {
   text-align: center;
@@ -384,3 +395,25 @@ footer table th img {
 }
 #iniciarsesion{color:rgb(21, 21, 88);
 margin-left: 22%;}
+
+/*---------@query---------------------------------*/
+@media screen and (max-width:768px){
+
+  #tablanuevosjuegos {width:30%;}
+  .navbar{margin-right: -70%;
+  }
+  footer{margin-right: -60%;
+  width:170%;
+}
+aside{margin-right: 30%;
+  margin-top:25%;}
+  #imagen1producto{width: 304px; height:342px;}
+  #imagen2producto{width: 204px; height:242;}
+  #imagen3producto{width: 304px; height:342px}
+  #imagendetalle{width: 204px; height:242px}
+  #tablaproducto{width: 10%; height: 10%;}
+  .footercortos {margin-right: -70%;
+    width:195%;
+    
+  }
+}

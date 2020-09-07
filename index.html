@@ -16,24 +16,29 @@
     <title>Todo para Videogames</title>
   </head>
 
-
+  <div class="container-fluid">
+   
   <body>
     <header>
       <h1>GameStore</h1>
     </header>
+  </div>
+  <div class="container-fluid">
     
-    <nav id="Menu" class="navbar navbar-expand-lg ">
+    <nav id="Menu" class="navbar navbar-expand-sm ">
+      <div class="row">
      <ul class="navbar-nav">
-      <li><button type="button"  class="btn btn-primary" onclick="location.href ='#iniciarsesion'">Iniciar sesion</button></li>
-      <li><button type="button"  class="btn btn-primary" onclick="location.href ='#footer'">Contacto</button></li>
+      <li class="nav-item"><button type="button"  class="btn btn-primary" onclick="location.href ='#iniciarsesion'">Iniciar sesion</button></li>
+      <li class="nav-item"><button type="button"  class="btn btn-primary" onclick="location.href ='#footer'">Contacto</button></li>
      
-       <li><button type="button"  class="btn btn-primary" onclick="location.href ='juego.html'">¿Jugas?</button></li>
+       <li class="nav-item"><button type="button"  class="btn btn-primary" onclick="location.href ='juego.html'">¿Jugas?</button></li>
   
     
     </ul>
+  </div>
     </nav>
-    
-    
+
+</div>
 
     <div class="container">
 
@@ -58,12 +63,12 @@
                     id="imagenindex"
                     src="./Imagenes/joystick_3.jpg"
                     alt="joystick"
-                /></a>
+                />Joystick - West Wireless-</a>
               </th>
          
 
-             <!--<div class="col-md-5"> -->
-              <th>Joystick - West Wireless-</th>
+             <!--<div class="col-md-5"> 
+              <th>Joystick - West Wireless-</th>-->
                <!-- cIERRE DE divclasscol TH-->
         
 
@@ -80,6 +85,64 @@
 </div>
         </article>
 
+     
+        <article>
+          <div class="row">
+          
+            
+  <table  id="tablanuevosjuegos" >
+   
+    <caption>Nuevos juegos</caption>
+    <tr><th id="titulotabla" colspan="3">JUEGASOS</th></tr>
+      
+    
+    <tr>
+  
+    <th>
+    <table ><tr>
+      <th><img class="imgproductos" id="imgthelastus" src="./Imagenes/Mafia.jpg" alt="cyberpunk">Mafia</th>
+      <th></th>
+    </tr>
+  </table>
+  
+  
+    </th>
+    <th> <table ><tr>
+      <th><img class="imgproductos" src="./Imagenes/Fifa21.jpg" alt="Fifa21">Fifa21</th>
+      <th></th>
+    </tr>
+  </table></th>
+    <th> <table ><tr>
+      <th><img class="imgproductos" src="./Imagenes/cyberpunk.jpg" alt="cyberpunk"></th>
+      <th>PS4 Cyberpunk 2077</th>
+    </tr>
+  </table></th>
+  </tr>
+  
+  
+  <tr> <th> <table><tr>
+    <th><img class="imgproductos" src="./Imagenes/avengers.jpg" alt="avengers"></th>
+    <th>PS4 Marvel's Avengers</th>
+  </tr>
+  </table></th>
+    <th> <table ><tr>
+      <th><img class="imgproductos" src="./Imagenes/pes21.jpg" alt="pes21">PS4 pes21</th>
+      <th></th>
+    </tr>
+  </table></th>
+    <th> <table ><tr>
+      <th><img class="imgproductos" src="./Imagenes/crash.jpg" alt="crash">PS4 crash</th>
+      <th></th>
+    </tr>
+  </table></th>
+  </tr>
+  
+  
+  </table>
+  </div>
+
+        </article>
+
         </section>
 
        
@@ -88,7 +151,7 @@
      
         <div class="row">
          
-          <div class="col-md-12">
+          <div class="col-md-10">
             <h2 id="iniciarsesion">Inicia sesion</h2>
   <form action="/action_page.php"  class="was-validated">
     <div class="form-group">
@@ -128,10 +191,10 @@
               
            
          </div>
-         
+         </div>
 
 
-
+         <div class="col-md-2">
         <aside>
           
           <table>
@@ -166,63 +229,6 @@
 
  <!-- cIERRE DE classconteiner
     </div>-->
-
-
-
-<div class="container">
-
-<div class="row"> 
-<table id="tablanuevosjuegos" >
-  <caption>Nuevos juegos</caption>
-  <tr><th id="titulotabla" colspan="3">JUEGASOS</th></tr>
-<tr>
-
-  <th>
-  <table class="table"><tr>
-    <th><img class="imgproductos" id="imgthelastus" src="./Imagenes/Mafia.jpg" alt="cyberpunk">Mafia</th>
-    <th></th>
-  </tr>
-</table>
-
-
-  </th>
-  <th> <table class="table"><tr>
-    <th><img class="imgproductos" src="./Imagenes/Fifa21.jpg" alt="Fifa21">Fifa21</th>
-    <th></th>
-  </tr>
-</table></th>
-  <th> <table class="table"><tr>
-    <th><img class="imgproductos" src="./Imagenes/cyberpunk.jpg" alt="cyberpunk"></th>
-    <th>PS4 Cyberpunk 2077</th>
-  </tr>
-</table></th>
-</tr>
-
-
-<tr> <th> <table class="table"><tr>
-  <th><img class="imgproductos" src="./Imagenes/avengers.jpg" alt="avengers"></th>
-  <th>PS4 Marvel's Avengers</th>
-</tr>
-</table></th>
-  <th> <table class="table"><tr>
-    <th><img class="imgproductos" src="./Imagenes/pes21.jpg" alt="pes21">PS4 pes21</th>
-    <th></th>
-  </tr>
-</table></th>
-  <th> <table class="table"><tr>
-    <th><img class="imgproductos" src="./Imagenes/crash.jpg" alt="crash">PS4 crash</th>
-    <th></th>
-  </tr>
-</table></th>
-</tr>
-
-
-</table>
-
-
-
-
-</div>
 
 
 
@@ -294,4 +300,5 @@
   </div>
   
   </body>
+  </div>
 </html>
