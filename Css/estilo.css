@@ -117,14 +117,14 @@ section table a:hover {
 
 aside {
   float: right;
-  position: relative;
+  position: sticky;
   height: 500px;
-  display: inline-block;
+  display: block;
   text-decoration: none;
-
+  
   margin-top: -10px;
 
-  margin-left: 265%;
+  margin-left: 160%;
   width: 15%;
   padding: 15%;
   padding-bottom: 0px;
