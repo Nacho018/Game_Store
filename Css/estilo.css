@@ -400,9 +400,9 @@ margin-left: 22%;}
 @media screen and (max-width:768px){
 
   #tablanuevosjuegos {width:30%;}
-  .navbar{margin-right: -70%;
+  .navbar{margin-right: -80%;
   }
-  footer{margin-right: -60%;
+  footer{margin-right: -75%;
   width:170%;
 }
 aside{margin-right: 30%;
@@ -412,8 +412,8 @@ aside{margin-right: 30%;
   #imagen3producto{width: 304px; height:342px}
   #imagendetalle{width: 204px; height:242px}
   #tablaproducto{width: 10%; height: 10%;}
-  .footercortos {margin-right: -70%;
-    width:195%;
+  .footercortos {margin-right: -80%;
+    width:210%;
     
   }
 }
