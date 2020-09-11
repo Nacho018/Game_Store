@@ -1,1 +1,4 @@
-# Game_Store sitio de practica, pagina de videogames.
+<<<<<<< HEAD
+# Game_Store  Sitio de practica, pagina de videogames fullstack.
+=======
+
