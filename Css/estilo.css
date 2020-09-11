@@ -253,8 +253,10 @@ footer table th img {
 .footercortos #tablaaccesorapido {
   margin-top: -5%;
   margin-right: 20%;
+  padding: 5%;
+ 
 }
-
+.footercortos #tablaaccesorapido th{ text-align: center;}
 .footercortos #tabladatafiscalfooter {
   margin-top: -5%;
 }
@@ -329,7 +331,9 @@ footer table th img {
   padding: 6%;
 }
 #tablaaccesorapido th {
-  padding: 6px;
+  padding: 7px;
+  text-align: center;
+  display: block;
 }
 #tablaaccesorapido th a {
   color: black;
@@ -374,7 +378,7 @@ footer table th img {
   color: rgb(21, 21, 88);S
 }
 #tablanuevosjuegos th {
-  padding-right: 0;
+  
   padding: 2px;
 }
 #tablanuevosjuegos table tr {
@@ -412,8 +416,10 @@ margin-left: 22%;}
   }
   footer{margin-right: -75%;
   width:170%;
-  
+  padding-right: 85%;
 }
+
+
 
 aside{margin-right: 30%;
   margin-top:25%;}
@@ -422,6 +428,7 @@ aside{margin-right: 30%;
   #imagen3producto{width: 304px; height:342px}
   #imagendetalle{width: 204px; height:242px}
   #tablaproducto{width: 10%; height: 10%;}
+  
   .footercortos {margin-right: -80%;
     width:210%;
     padding-right: 85%;
