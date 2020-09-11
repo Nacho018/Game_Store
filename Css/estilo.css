@@ -271,7 +271,11 @@ footer table th img {
   .imagen1producto{height: ;}
 
 /*---------IDs---------------------------------*/
+#tablaproducto{width:100% ;}
 
+#tablaproducto #imagen1producto{width: 404px; height:442px;}
+#tablaproducto #imagen2producto{width: 304px; height:442;}
+#tablaproducto #imagen3producto{width: 404px; height:442px;}
 #imagenindex {
   width: 604px;
   height: 642px;
@@ -403,6 +407,8 @@ footer table th img {
 #iniciarsesion{color:rgb(21, 21, 88);
 margin-left: 22%;}
 
+
+
 /*---------@query---------------------------------*/
 @media screen and (max-width:768px){
 
@@ -422,10 +428,14 @@ margin-left: 22%;}
 
 
 aside{margin-right: 30%;
-  margin-top:25%;}
-  #imagen1producto{width: 304px; height:342px;}
-  #imagen2producto{width: 204px; height:242;}
-  #imagen3producto{width: 304px; height:342px}
+  margin-top:25%;
+margin-left: 1%;}
+
+  #tablaproducto{width:25% ;
+  border-left:none;}
+  #imagen1producto{width: 204px; height:242px;}
+  #imagen2producto{width: 104px; height:142;}
+  #imagen3producto{width: 204px; height:242px}
   #imagendetalle{width: 204px; height:242px}
   #tablaproducto{width: 10%; height: 10%;}
   
@@ -434,4 +444,47 @@ aside{margin-right: 30%;
     padding-right: 85%;
     
   }
+
+}
+@media screen and (max-width:540px){ 
+  #tablanuevosjuegos {
+  width: 87%;
+  margin-left:-3%;
+ }
+ #tablanuevosjuegos #imgproductos{width:5%}
+
+#tabladetallesproducto {width: 50%;
+margin-left:-20%;
+padding-left: -5%;
+}
+#tabladetallesproducto #tablaceleste{width: 10px; height:300px;
+margin-right: 50%;}
+
+
+}
+#imagen1producto{width: 200px; height:250px;}
+#imagen2producto{width: 150px; height:200px;}
+#imagen3producto{width: 150px; height:200px;;
+margin-left: -10%;}
+
+@media screen and (max-width:280px){ header h1{font-size:33px;
+margin-left: 1%;
+margin-bottom: 10%;
+padding-right: 10%;}
+.navbar{margin-top: 10%;}
+  .navbar li {margin-left: 20%;} ;
+  section{text-align: left;}
+  section h6{text-align:left;
+    font-size: 10px;
+  float: left;}
+  section table{width:90%;
+    height: 90%;
+  margin-bottom: 10%;}
+
+  #imagenindex{width: 160px; height:30%;}
+  
+  #tablanuevosjuegos {width:100%;}
+  #tablanuevosjuegos img{width: 30px; height:35px;}
+
+
 }
