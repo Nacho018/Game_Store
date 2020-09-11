@@ -271,11 +271,13 @@ footer table th img {
   .imagen1producto{height: ;}
 
 /*---------IDs---------------------------------*/
-#tablaproducto{width:100% ;}
+#tablaproducto{width:90% ;
+margin-left: 7%;
+border-left:none;}
 
-#tablaproducto #imagen1producto{width: 404px; height:442px;}
-#tablaproducto #imagen2producto{width: 304px; height:442;}
-#tablaproducto #imagen3producto{width: 404px; height:442px;}
+#tablaproducto #imagen1producto{width: 304px; height:342px;}
+#tablaproducto #imagen2producto{width: 304px; height:342;}
+#tablaproducto #imagen3producto{width: 304px; height:342px;}
 #imagenindex {
   width: 604px;
   height: 642px;
