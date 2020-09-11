@@ -360,12 +360,15 @@ footer table th img {
 #tablanuevosjuegos {
   border: 2px rgb(87, 4, 87) solid;
   background-color: aquamarine;
-  margin-left: 3%;
+  margin-left: 1%;
   margin-top: 20%;
+  margin-bottom: 20%;
   padding: 3px;
- 
+  display: block;
   width: 100%;
   height: 85%;
+
+
 }
 #tablanuevosjuegos caption {
   color: rgb(21, 21, 88);S
@@ -399,12 +402,19 @@ margin-left: 22%;}
 /*---------@query---------------------------------*/
 @media screen and (max-width:768px){
 
-  #tablanuevosjuegos {width:30%;}
+  #tablanuevosjuegos {
+  width: 89%;
+  margin-left:-3%;
+ }
+ #tablanuevosjuegos img{ size: 10%;}
+
   .navbar{margin-right: -80%;
   }
   footer{margin-right: -75%;
   width:170%;
+  
 }
+
 aside{margin-right: 30%;
   margin-top:25%;}
   #imagen1producto{width: 304px; height:342px;}
@@ -414,6 +424,7 @@ aside{margin-right: 30%;
   #tablaproducto{width: 10%; height: 10%;}
   .footercortos {margin-right: -80%;
     width:210%;
+    padding-right: 85%;
     
   }
 }
